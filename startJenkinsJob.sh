@@ -20,6 +20,6 @@ fi
 
 docker build . -t mc_server/mc_server:latest 
 
-docker run --name mc_server -v /home/tmcalves/mc_server/imblying76_server/survival:/minecraft/survival -d mc_server/mc_server:latest
+docker run  -p 25565:25565 --name mc_server -v /home/tmcalves/mc_server/imblying76_server/survival:/minecraft/survival -d mc_server/mc_server:latest
 
 
