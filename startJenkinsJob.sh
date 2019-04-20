@@ -13,7 +13,7 @@ fi
 
 if [ -n "$IMAGE" ]; then
 	echo "Found image. removing"
-	docker rmi -f mc_server
+	docker rmi -f mc_server/mc_server:latest
 else
 	echo "No image found"
 fi
